@@ -1,0 +1,6 @@
+RWDB:
+  connection_string: postgresql://postgres:postgres@database:5432/forms?sslmode=disable
+listen_address: :8080
+broker:
+  connection_string: amqp://rabbitmaster:rabbitmaster@broker:5672/
+  exchange: forms.data

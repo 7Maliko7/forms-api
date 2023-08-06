@@ -1,0 +1,10 @@
+RWDB:
+  connection_string: postgresql://postgres:postgres@localhost:5432/forms?sslmode=disable
+listen_address: :8080
+broker:
+  connection_string: amqp://rabbitmaster:rabbitmaster@localhost:5672/
+  exchange: forms.data
+storage:
+  filesystem:
+    default_permissions: 777
+    path: storage\
